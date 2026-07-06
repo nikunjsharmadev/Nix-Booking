@@ -1,0 +1,258 @@
+* {
+  box-sizing: border-box;
+}
+
+.hotel-details {
+  max-width: 1300px;
+
+  margin: auto;
+
+  padding: 40px 20px;
+}
+
+.breadcrumb {
+  color: #666;
+
+  margin-bottom: 25px;
+
+  font-size: 14px;
+}
+
+.hotel-header {
+  display: flex;
+
+  justify-content: space-between;
+
+  align-items: center;
+
+  margin-bottom: 30px;
+}
+
+.hotel-header h1 {
+  font-size: 40px;
+
+  margin-bottom: 8px;
+}
+
+.location {
+  color: #666;
+}
+
+.share-btn {
+  padding: 12px 22px;
+
+  border: 1px solid #ddd;
+
+  background: white;
+
+  border-radius: 8px;
+
+  cursor: pointer;
+}
+
+.gallery {
+  display: grid;
+
+  grid-template-columns: 2fr 1fr;
+
+  gap: 15px;
+
+  margin-bottom: 40px;
+}
+
+.main-image {
+  width: 100%;
+
+  height: 450px;
+
+  object-fit: cover;
+
+  border-radius: 15px;
+}
+
+.thumbs {
+  display: grid;
+
+  grid-template-columns: 1fr 1fr;
+
+  gap: 15px;
+}
+
+.thumbs img {
+  width: 100%;
+
+  height: 217px;
+
+  object-fit: cover;
+
+  border-radius: 15px;
+
+  cursor: pointer;
+
+  transition: 0.3s;
+}
+
+.thumbs img:hover {
+  transform: scale(1.03);
+}
+
+.content {
+  display: grid;
+
+  grid-template-columns: 2fr 380px;
+
+  gap: 40px;
+}
+
+.left section {
+  margin-bottom: 40px;
+}
+
+.left h2 {
+  margin-bottom: 20px;
+}
+
+.description p {
+  line-height: 1.8;
+
+  color: #555;
+}
+
+.amenities {
+  display: grid;
+
+  grid-template-columns: repeat(2, 1fr);
+
+  gap: 20px;
+}
+
+.amenities span {
+  padding: 15px;
+
+  background: #f7f7f7;
+
+  border-radius: 10px;
+}
+
+.review {
+  padding: 20px;
+
+  border: 1px solid #eee;
+
+  border-radius: 12px;
+
+  margin-bottom: 20px;
+}
+
+.review h4 {
+  margin-bottom: 10px;
+}
+
+.booking-card {
+  position: sticky;
+
+  top: 100px;
+
+  height: max-content;
+
+  padding: 25px;
+
+  border-radius: 15px;
+
+  box-shadow: 0 10px 30px rgba(0, 0, 0, 0.08);
+
+  background: white;
+}
+
+.booking-card h2 {
+  font-size: 36px;
+
+  margin-bottom: 5px;
+}
+
+.booking-card span {
+  color: #777;
+}
+
+.booking-card input,
+.booking-card select {
+  width: 100%;
+
+  padding: 15px;
+
+  margin-top: 18px;
+
+  border: 1px solid #ddd;
+
+  border-radius: 10px;
+}
+
+.booking-card button {
+  margin-top: 25px;
+
+  width: 100%;
+
+  padding: 16px;
+
+  border: none;
+
+  background: #0066ff;
+
+  color: white;
+
+  font-size: 17px;
+
+  border-radius: 10px;
+
+  cursor: pointer;
+
+  transition: 0.3s;
+}
+
+.booking-card button:hover {
+  background: #0052cc;
+}
+
+@media (max-width: 992px) {
+  .gallery {
+    grid-template-columns: 1fr;
+  }
+
+  .thumbs {
+    grid-template-columns: repeat(4, 1fr);
+  }
+
+  .thumbs img {
+    height: 100px;
+  }
+
+  .content {
+    grid-template-columns: 1fr;
+  }
+
+  .booking-card {
+    position: static;
+  }
+}
+
+@media (max-width: 768px) {
+  .hotel-header {
+    flex-direction: column;
+
+    align-items: flex-start;
+
+    gap: 20px;
+  }
+
+  .hotel-header h1 {
+    font-size: 30px;
+  }
+
+  .amenities {
+    grid-template-columns: 1fr;
+  }
+
+  .thumbs {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
