@@ -1,4 +1,4 @@
-.hero {
+.hl-hero {
   height: 85vh;
   background: url("https://images.unsplash.com/photo-1507525428034-b723cf961d3e?auto=format&fit=crop&w=1800&q=80");
   background-size: cover;
@@ -7,18 +7,18 @@
   justify-content: center;
   align-items: center;
 }
-.overlay {
+.hl-hero .overlay {
   background: rgba(0, 0, 0, 0.45);
   padding: 60px;
   border-radius: 20px;
   text-align: center;
-  color: white;
+  color: rgb(255, 255, 255);
 }
-.overlay h1 {
+.hl-hero .overlay h1 {
   font-size: 64px;
   margin-bottom: 20px;
 }
-.overlay p {
+.hl-hero .overlay p {
   font-size: 22px;
   margin-bottom: 30px;
 }

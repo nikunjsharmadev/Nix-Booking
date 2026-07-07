@@ -1,22 +1,22 @@
-.search-box {
+.hl-book-bar {
   display: grid;
   grid-template-columns: 2fr 1fr 1fr 1fr auto;
   gap: 15px;
-  background: white;
+  background: rgb(255, 255, 255);
   padding: 25px;
   border-radius: 16px;
 }
-.search-box input,
-.search-box select {
+.hl-book-bar input,
+.hl-book-bar select {
   padding: 15px;
   font-size: 16px;
-  border: 1px solid #ddd;
+  border: 1px solid rgb(221, 221, 221);
   border-radius: 8px;
   outline: none;
 }
-.search-box button {
-  background: #1a73e8;
-  color: white;
+.hl-book-bar button {
+  background: rgb(26, 115, 232);
+  color: rgb(221, 221, 221);
   border: none;
   padding: 16px 28px;
   border-radius: 8px;
@@ -24,6 +24,6 @@
   cursor: pointer;
   transition: 0.3s;
 }
-.search-box button:hover {
-  background: #1559b8;
+.hl-book-bar button:hover {
+  background: rgb(21, 89, 184);
 }

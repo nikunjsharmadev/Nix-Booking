@@ -1,8 +1,8 @@
 import "./Navbar.css";
 import { Link } from "react-router-dom";
-function Navbar() {
+export function HlNavbar() {
   return (
-    <nav className="navbar">
+    <nav className="hl-navbar">
       <div className="logo">TripFinder</div>
       <ul>
         <li>
@@ -12,16 +12,15 @@ function Navbar() {
           <Link to="/">Hotels</Link>
         </li>
         <li>
-          <Link to="/">Flights</Link>
+          <Link to="">Flights</Link>
         </li>
         <li>
-          <Link to="/Profile"></Link>
+          <Link to="/Profile">User</Link>
         </li>
         <li>
-          <Link to="/login"></Link>
+          <Link to="/login">Login</Link>
         </li>
       </ul>
     </nav>
   );
 }
-export default Navbar;
