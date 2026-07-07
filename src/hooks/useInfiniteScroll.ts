@@ -3,7 +3,7 @@ interface Props {
   target: RefObject<HTMLDivElement | null>;
   onIntersect: () => void;
 }
-export default function useInfiniteScroll({ target, onIntersect }: Props) {
+export function useInfiniteScroll({ target, onIntersect }: Props) {
   useEffect(() => {
     if (!target.current) return;
     const observer = new IntersectionObserver(

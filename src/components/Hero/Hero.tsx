@@ -1,18 +1,17 @@
 import "./Hero.css";
-import SearchBar from "../SearchBar/SearchBar";
-function Hero() {
+import { HlBookbar } from "../";
+export function HlHero() {
   return (
-    <section className="hero">
+    <section className="hl-hero">
       <div className="overlay">
         <h1>
           Book smarter
           <br />
-          Travel better
+          Travel Better
         </h1>
-        <p>Find flights and hotels worldwide</p>
-        <SearchBar />
+        <p>Find Hotels</p>
+        <HlBookbar />
       </div>
     </section>
   );
 }
-export default Hero;

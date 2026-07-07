@@ -1,7 +1,7 @@
-import "./SearchBar.css";
-function SearchBar() {
+import "./Bookbar.css";
+export function HlBookbar() {
   return (
-    <form className="search-box" onSubmit={(e) => e.preventDefault()}>
+    <form className="hl-book-bar" onSubmit={(e) => e.preventDefault()}>
       <input type="text" name="destination" placeholder="Destination" />
       <input type="date" name="from" />
       <input type="date" name="to" />
@@ -10,8 +10,6 @@ function SearchBar() {
         <option>2 Guest</option>
         <option>Family</option>
       </select>
-      <button type="submit">Search</button>
     </form>
   );
 }
-export default SearchBar;

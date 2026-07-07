@@ -1,14 +1,5 @@
-export interface Hotel {
-  id: number;
-  name: string;
-  city: string;
-  price: number;
-  rating: number;
-  image: string;
-  description: string;
-}
-
-export const hotels: Hotel[] = [
+import type { Hotel } from "../data/hotel";
+export const HOTELS: Hotel[] = [
   {
     id: 1,
     name: "Hilton Downtown",

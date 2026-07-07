@@ -1,13 +1,10 @@
-import Navbar from "../components/NavBar/Navbar";
-import Hero from "../components/Hero/Hero";
-import HotelGrid from "../components/HotelGrid/HotelGrid";
-function Home() {
+import { HlNavbar, HlHero, HlSearch } from "../components";
+export function HlHome() {
   return (
     <>
-      <Navbar />
-      <Hero />
-      <HotelGrid />
+      <HlNavbar />
+      <HlHero />
+      <HlSearch />
     </>
   );
 }
-export default Home;
